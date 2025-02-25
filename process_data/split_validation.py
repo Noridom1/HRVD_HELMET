@@ -52,7 +52,7 @@ def main():
     os.makedirs(val_images_folder, exist_ok=True)
     os.makedirs(val_labels_folder, exist_ok=True)
 
-    split(frames_folder, labels_folder, val_images_folder, val_images_folder)
+    split(frames_folder, labels_folder, val_images_folder, val_labels_folder)
 
     print("Splited train_val successfully")
 
