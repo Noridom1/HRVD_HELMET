@@ -5,9 +5,10 @@ model = YOLO('yolov8n.pt')
 
 # Train the model on CPU
 model.train(
-    data='D:/OD+Tracking/yolov9/data_ext/data.yaml',  # ✅ Absolute path
-    epochs=10, 
-    batch=16, 
+    data='/content/HRVD_HELMET/data/data.yaml',  # ✅ Absolute path
+    epochs=30, 
+    batch=32, 
     imgsz=640, 
-    device='cpu'
+    device='cuda:0',
+    save_period=10
 )
