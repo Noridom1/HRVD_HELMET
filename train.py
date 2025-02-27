@@ -1,6 +1,6 @@
 from ultralytics import YOLO
 
-# Load the pre-trained YOLOv9 model
+# Load the pre-trained YOLOv8 model
 model = YOLO('yolov8n.pt')
 
 # Train the model on CPU

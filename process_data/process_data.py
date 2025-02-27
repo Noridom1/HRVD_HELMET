@@ -97,8 +97,8 @@ def process_annotation(annotation_path, output_labels_path, video_mapping):
             height = h / img_height
 
             # Get class ID
-            # class_id = class_mapping[label]  
-            class_id = 0
+            class_id = class_mapping[label]  
+            # class_id = 0
 
             # Append bounding box information to the label file
             with open(label_path, "a") as label_file:
